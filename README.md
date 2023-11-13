@@ -9,6 +9,16 @@ This would deploy: PVC, Deployment, Service, Route
 
 ### Upload the packages
 
+Use the [package_mirror.sh](./package_mirror.sh) script to upload the packages. 
+```shell
+./package_mirror.sh -P <package> -V <python-version> -d <dir> -p <pod-name> -d <dir> mirror
+./package_mirror.sh -P <package> -V <python-version> -d <dir> download
+./package_mirror.sh -p <pod-name> -d <dir> upload
+./package_mirror.sh -h
+```
+
+or 
+
 Use the package: [python-pypi-mirror](https://pypi.org/project/python-pypi-mirror/)
 Above package is already installed on the Image.  
 User can rsh into the pod and run the following command:  
