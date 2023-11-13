@@ -69,6 +69,7 @@ spec:
             - '0.0.0.0'
             - '--port'
             - '8080'
+            - '--disable-fallback'
             - '/opt/app-root/packages'
           ports:
             - containerPort: 8080
