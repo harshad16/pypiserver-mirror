@@ -70,6 +70,7 @@ spec:
             - '--port'
             - '8080'
             - '--disable-fallback'
+            - '--verbose'
             - '/opt/app-root/packages'
           ports:
             - containerPort: 8080
